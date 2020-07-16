@@ -542,4 +542,19 @@ template {
     background-color: #333333;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
