@@ -7,4 +7,11 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
+  // Keyboard Control Parameters
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
 })
