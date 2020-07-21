@@ -707,7 +707,7 @@ template {
   line-height: 33px;
 }
 
-.booking__rer-room {
+.booking__per-room {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -952,6 +952,12 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider {
+    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
