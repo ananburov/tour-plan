@@ -1025,6 +1025,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
@@ -1051,8 +1054,17 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
-  .newsletter__title {
+  .newsletter-title {
     margin-bottom: 37px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 5px;
   }
   .subscribe {
     width: 100%;
@@ -1062,6 +1074,12 @@ template {
 @media (max-width: 375px) {
   .slider {
     height: 210px;
+  }
+}
+
+@media (max-width: 320px) {
+  .newsletter {
+    padding: 60px 0 75px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
