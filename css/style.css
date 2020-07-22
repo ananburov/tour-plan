@@ -1190,7 +1190,7 @@ template {
     width: 100%;
   }
   .newsletter {
-    padding: 92px 0 93px 0;
+    padding: 76px 0 83px 0;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1202,6 +1202,7 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    height: auto;
   }
   .reviews__title {
     margin-bottom: 60px;
@@ -1213,7 +1214,7 @@ template {
     display: none;
   }
   .reviews-slider__button {
-    top: 32px;
+    top: 30px;
   }
   .reviews-slider__button--prev {
     left: 50%;
