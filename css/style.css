@@ -1286,9 +1286,6 @@ template {
   .hotel__slider {
     height: 210px;
   }
-  .reviews__title {
-    font-size: 17px;
-  }
 }
 
 @media (max-width: 320px) {
