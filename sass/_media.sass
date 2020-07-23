@@ -10,6 +10,9 @@
         height: 100%
         width: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .newsletter
     padding: 92px 0
@@ -53,6 +56,14 @@
       font-weight: bold
       font-size: 30px
       line-height: 38px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -110,7 +121,7 @@
       max-width: 576px
       width: 92%
       flex-direction: column
-      align-items: start
+      align-items: flex-start
   .reviews
     &__title
       margin-bottom: 60px
@@ -129,6 +140,12 @@
           right: 50%
           transform: translate(50%, 0)
           margin-right: -65px
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -156,6 +173,13 @@
       margin-bottom: 42px
       font-size: 18px
       line-height: 23px
+  .activities
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+  .card
+    width: 100%
 @media (max-width: 375px)
   .hotel__slider
     height: 210px
