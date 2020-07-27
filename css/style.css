@@ -805,6 +805,257 @@ template {
   height: 100%;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.packages-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  color: #ffffff;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.big-card__foto {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-radius: 8px 0px 0px 8px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.big-card__image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.big-card__sale {
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.big-card__info {
+  padding: 46px 21px 30px 46px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #0A223D;
+}
+
+.big-card__raiting {
+  margin-bottom: 5px;
+  line-height: 0;
+}
+
+.big-card__title {
+  margin-bottom: 27px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.big-card__description {
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.big-card__room {
+  margin-bottom: 37px;
+}
+
+.big-card__text {
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.big-card__booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-card__old-price {
+  display: block;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.big-card__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.big-card__button {
+  width: 120px;
+  min-height: 40px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.small-card {
+  width: 350px;
+  min-height: 500px;
+  color: #ffffff;
+}
+
+.small-card__foto {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.small-card__sale {
+  padding: 4px 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.small-card__info {
+  padding: 30px 21px 25px 32px;
+  background-color: #0A223D;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.small-card__title {
+  margin-bottom: 23px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.small-card__room {
+  margin-bottom: 24px;
+}
+
+.small-card__text {
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.small-card__booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-card__old-price {
+  display: block;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.small-card__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.small-card__button {
+  width: 120px;
+  min-height: 40px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1360,7 +1611,7 @@ template {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1388,7 +1639,7 @@ template {
           align-items: flex-start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 1200px) {
@@ -1410,6 +1661,16 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .big-card {
+    display: none;
+  }
+  .hidden {
+    display: block;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -1467,6 +1728,19 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .packages-wrapper {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+  .small-card {
+    width: 340px;
+  }
+  .small-card__image {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1623,6 +1897,16 @@ template {
   }
   .hotel-slider {
     height: 350px;
+  }
+  .packages {
+    padding: 40px 0 50px 0;
+  }
+  .packages__title {
+    margin-bottom: 60px;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .booking {
     width: 100%;
@@ -1817,6 +2101,9 @@ template {
 @media (max-width: 375px) {
   .hotel__slider {
     height: 210px;
+  }
+  .small-card {
+    width: 294px;
   }
   .footer {
     padding: 69px 0 21px 0;

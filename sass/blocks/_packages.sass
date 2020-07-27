@@ -1,0 +1,112 @@
+.packages
+  padding: 40px 0 70px 0
+  &__title
+    text-align: center
+    margin-top: 0
+    margin-bottom: 65px
+.packages-location
+  display: flex
+  flex-direction: column
+  align-items: center
+.packages-wrapper
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  column-gap: 30px
+  row-gap: 30px
+  align-items: center
+.big-card
+  display: flex
+  width: 730px
+  color: $light
+  grid-column: 1 / 3
+  &__foto
+    position: relative
+    flex-basis: 50%
+    border-radius: 8px 0px 0px 8px
+    background-size: cover
+    overflow: hidden
+  &__image
+    height: 100%
+    object-fit: cover
+  &__sale
+    padding: 8px 12px
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    @include sale
+  &__info
+    padding: 46px 21px 30px 46px
+    flex-basis: 50%
+    border-radius: 0px 8px 8px 0px
+    background-color: $dark
+  &__raiting
+    margin-bottom: 5px
+    line-height: 0
+  &__title
+    margin-bottom: 27px
+    @include card-title
+  &__description
+    margin-bottom: 34px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+  &__room
+    margin-bottom: 37px
+  &__text
+    @include card-text
+  &__booking
+    @include card-booking
+  &__old-price
+    @include card-old-price
+  &__price
+    @include card-price
+  &__button
+    @include card-button
+.hidden
+  display: none
+.small-card
+  width: 350px
+  min-height: 500px
+  color: $light
+  &__foto
+    position: relative
+    height: 250px
+    overflow: hidden
+    border-radius: 8px 8px 0px 0px
+  &__sale
+    padding: 4px 9px
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    @include sale
+  &__info
+    padding: 30px 21px 25px 32px
+    background-color: $dark
+    border-radius: 0px 0px 8px 8px 
+  &__title
+    margin-bottom: 23px
+    @include card-title
+  &__room
+    margin-bottom: 24px
+  &__text
+    @include card-text
+  &__booking
+    @include card-booking
+  &__old-price
+    @include card-old-price
+  &__price
+    @include card-price
+  &__button
+    @include card-button
+    
+
+
+
+
+
+
+  
+
+ 

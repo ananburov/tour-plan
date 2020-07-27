@@ -13,6 +13,12 @@
   .card
     width: 230px
     height: 230px
+  .packages-wrapper
+    grid-template-columns: repeat(2, 1fr)
+  .big-card
+    display: none
+  .hidden
+    display: block
   .footer
     &__input
       flex-basis: 100%
@@ -50,6 +56,13 @@
     width: 340px
   .map
     width: 340px
+  .packages-wrapper
+    column-gap: 20px
+    row-gap: 20px
+  .small-card
+    width: 340px
+    &__image
+      max-width: max-content
   .reviews
     &-slider
       &__item
@@ -149,6 +162,12 @@
       min-height: 450px
     &-slider
       height: 350px
+  .packages
+    padding: 40px 0 50px 0
+    &__title
+      margin-bottom: 60px
+  .packages-wrapper
+    grid-template-columns: repeat(1, 1fr)
   .booking
     width: 100%
   .map
@@ -272,6 +291,8 @@
 @media (max-width: 375px)
   .hotel__slider
     height: 210px
+  .small-card
+    width: 294px
   .footer
     padding: 69px 0 21px 0
     &-wrapper
