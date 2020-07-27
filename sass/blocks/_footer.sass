@@ -3,7 +3,6 @@
   background-color: $dark
   color: $light
   &-wrapper
-    padding: 0 0 77px 0
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
@@ -68,6 +67,7 @@
     color: $footer-text-color
     margin-bottom: 22px
   &__link
+    margin-right: 10px
     text-decoration: none
     color: inherit
   &__input
@@ -78,6 +78,9 @@
     height: 50px
     margin-bottom: 15px
     flex-basis: 48%
+    color: #a5a5a5
+    &::placeholder
+      color: $footer-form-text
   &__message
     background-color: #fff
     border-radius: 4px
@@ -87,6 +90,8 @@
     margin-bottom: 23px
     height: 123px
     resize: none
+    &::placeholder
+      color: $footer-form-text
   &__button
     min-width: 160px
     min-height: 50px
