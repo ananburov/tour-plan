@@ -15,10 +15,6 @@
     height: 230px
   .packages-wrapper
     grid-template-columns: repeat(2, 1fr)
-  .big-card
-    display: none
-  .hidden
-    display: block
   .footer
     &__input
       flex-basis: 100%
@@ -59,6 +55,11 @@
   .packages-wrapper
     column-gap: 20px
     row-gap: 20px
+  .big-card
+    &__foto
+      flex-basis: 48%
+    &__info
+      flex-basis: 48%
   .small-card
     width: 340px
     &__image
@@ -168,6 +169,12 @@
       margin-bottom: 60px
   .packages-wrapper
     grid-template-columns: repeat(1, 1fr)
+  .big-card
+    display: none
+  .small-card
+    display: block
+    &__sale
+      font-size: 10px
   .booking
     width: 100%
   .map

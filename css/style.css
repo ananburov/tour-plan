@@ -1666,12 +1666,6 @@ template {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .big-card {
-    display: none;
-  }
-  .hidden {
-    display: block;
-  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1733,6 +1727,14 @@ template {
     -webkit-column-gap: 20px;
             column-gap: 20px;
     row-gap: 20px;
+  }
+  .big-card__foto {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .big-card__info {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .small-card {
     width: 340px;
@@ -1907,6 +1909,15 @@ template {
   .packages-wrapper {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .big-card {
+    display: none;
+  }
+  .small-card {
+    display: block;
+  }
+  .small-card__sale {
+    font-size: 10px;
   }
   .booking {
     width: 100%;
