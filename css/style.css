@@ -1908,6 +1908,9 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .navbar__search--mobile_visible {
+    margin-bottom: 12px;
+  }
   .navbar-bottom {
     display: none;
     position: fixed;
@@ -1925,12 +1928,14 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+    margin-bottom: 27px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1962,6 +1967,9 @@ template {
     color: #ffffff;
     margin-left: 0;
     margin-top: 10px;
+  }
+  .search__input {
+    width: 245px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
