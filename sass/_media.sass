@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 1fr)
   .footer
     &-wrapper
-      grid-template-columns: 1fr 1fr 255px 1fr
+      grid-template-columns: 1fr 1fr 265px 196px
     &__input
       flex-basis: 100%
 @media (max-width: 992px)
@@ -86,7 +86,7 @@
   .footer
     padding: 73px 0 33px 0
     &-wrapper
-      grid-template-columns: 1fr 1fr 1fr 133px 1fr 1fr
+      grid-template-columns: 1fr 0.5fr 1fr 133px 75px 1fr
       grid-row-gap: 40px
       margin: 0 0 56px 0
     &__input
@@ -115,7 +115,6 @@
         grid-column: span 5
     &__bottom
       grid-template-columns: repeat(2, minmax(min-content, 1fr))
-      height: 22px
       &-links
         grid-column: 1 / 2
         justify-content: flex-start

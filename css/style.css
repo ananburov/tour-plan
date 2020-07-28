@@ -1414,9 +1414,8 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  -ms-grid-columns: 1fr 1fr 1.2fr 196px;
+      grid-template-columns: 1fr 1fr 1.2fr 196px;
   grid-gap: 20px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
@@ -1644,7 +1643,6 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[3];
       grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  height: 40px;
 }
 
 .footer__bottom-links {
@@ -1676,9 +1674,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1709,8 +1704,8 @@ template {
         grid-template-columns: repeat(2, 1fr);
   }
   .footer-wrapper {
-    -ms-grid-columns: 1fr 1fr 255px 1fr;
-        grid-template-columns: 1fr 1fr 255px 1fr;
+    -ms-grid-columns: 1fr 1fr 265px 196px;
+        grid-template-columns: 1fr 1fr 265px 196px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -1814,8 +1809,8 @@ template {
     padding: 73px 0 33px 0;
   }
   .footer-wrapper {
-    -ms-grid-columns: 1fr 1fr 1fr 133px 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 133px 1fr 1fr;
+    -ms-grid-columns: 1fr 0.5fr 1fr 133px 75px 1fr;
+        grid-template-columns: 1fr 0.5fr 1fr 133px 75px 1fr;
     grid-row-gap: 40px;
     margin: 0 0 56px 0;
   }
@@ -1864,7 +1859,6 @@ template {
     -ms-grid-columns: (minmax(min-content, 1fr))[2];
         grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    height: 22px;
   }
   .footer__bottom-links {
     -ms-grid-column: 1;
