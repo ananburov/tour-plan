@@ -1,11 +1,11 @@
-var hotelSlider = new Swiper('.hotel-slider', {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 
   // Keyboard Control Parameters
@@ -13,16 +13,23 @@ var hotelSlider = new Swiper('.hotel-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-  effect: "coverflow"
-});
-var reviewsSlider = new Swiper('.reviews-slider', {
+  effect: "coverflow",
+})
+var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
+})
 
-});
+var menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке")
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible")
+})
