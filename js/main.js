@@ -50,7 +50,4 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-
-  d = document.getElementById("booking-modal");
-    d.addEventListener("keypress",    function(e){e.keyCode==27 &&(d.style.visibility="hidden")},false);
 });

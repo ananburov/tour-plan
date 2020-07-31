@@ -1717,6 +1717,7 @@ template {
   z-index: 101;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: scroll;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -1755,6 +1756,7 @@ template {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  resize: none;
 }
 
 .modal__info {
@@ -2388,7 +2390,7 @@ template {
     margin-bottom: 15px;
   }
   .modal__dialog {
-    padding: 30px 40px;
+    padding: 30px 20px;
   }
 }
 
@@ -2414,6 +2416,13 @@ template {
 @media (max-width: 320px) {
   .newsletter {
     padding: 60px 0 75px 0;
+  }
+}
+
+@media (max-height: 495px) {
+  .modal__dialog {
+    height: 100%;
+    overflow: scroll;
   }
 }
 
