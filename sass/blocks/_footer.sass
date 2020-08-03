@@ -33,7 +33,6 @@
       grid-column: span 2
   &__form
     display: flex
-    align-items: center
     justify-content: space-between
     flex-wrap: wrap
   &__ul
@@ -72,11 +71,13 @@
     text-decoration: none
     color: inherit
   &__input
-    margin-bottom: 15px
-    flex-basis: 48%
+    width: 100%
     color: #a5a5a5
     &::placeholder
       color: $footer-form-text
+    &-group
+      margin-bottom: 15px
+      flex-basis: 48%
   &__message
     flex-basis: 100%
     margin-bottom: 23px

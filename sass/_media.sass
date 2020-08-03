@@ -19,7 +19,8 @@
     &-wrapper
       grid-template-columns: 1fr 1fr 265px 196px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .newsletter
     padding: 92px 0
@@ -90,7 +91,8 @@
       grid-row-gap: 40px
       margin: 0 0 56px 0
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 49%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -299,7 +301,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__button
       &-block
         flex-direction: column-reverse
@@ -402,6 +405,10 @@
   .modal
     &__info
       margin-top: 10px
+  .small
+    &-card
+      &__button
+        min-width: 120px
 @media (max-width: 320px)
   .newsletter
     padding: 60px 0 75px 0
