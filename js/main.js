@@ -67,7 +67,7 @@ if(e.keyCode == 27) {}
         name: {
           required: true,
           minlength: 2
-        }
+        },
       },
       messages: {
         name: {
@@ -89,6 +89,12 @@ if(e.keyCode == 27) {}
   $(".subscribe").each(function () {
     $(this).validate({
       errorClass: "invalid-email",
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
         newsletter: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
