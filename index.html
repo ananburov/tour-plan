@@ -1016,7 +1016,7 @@
         <h3 class="modal__title">Booking</h3> 
         <form action="send.php" method="POST" class="form modal__form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" required name="name" />
-          <input type="tel" class="input modal__input" placeholder="Phone Number*" required name="phone" id="phone"/>
+          <input type="tel" class="input modal__input" placeholder="Phone Number*" required name="phone" id="phone" data-mask="+7 (999) 999-99-99" data-mask-selectonfocus="true"/>
           <input type="email" class="input modal__input" placeholder="Email*" required name="email" />
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <div class="modal__button-block">
@@ -1053,6 +1053,7 @@
             required
             name="phone"
             id="phone"
+            data-mask="+7 (999) 999-99-99" data-mask-selectonfocus="true"
           />  
           <input type="email" class="input modal__input" placeholder="Your Email*" required name="email" />
           <textarea
