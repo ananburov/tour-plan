@@ -72,7 +72,11 @@ $(document).ready(function () {
         email: {
           required: true,
           email: true
-        }
+        },
+        phone: {
+          required: true,
+          minlength: 18
+        },
       },
       messages: {
         name: {
@@ -90,14 +94,14 @@ $(document).ready(function () {
     });
   });
 
-  $(".subscribe").each(function () {
+  $(".subscribe").each(function (){
     $(this).validate({
       errorClass: "invalid-email",
       rules: {
         email: {
           required: true,
           email: true
-        }
+        },
       },
       messages: {
         email: {
