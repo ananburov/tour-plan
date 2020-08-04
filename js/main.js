@@ -99,15 +99,17 @@ $(document).ready(function () {
           email: true
         }
       },
-        newsletter: {
+      messages: {
+        email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
       },
-    );
+    });
   });
 
   $(document).ready(function () {
     $('#phone').mask('+7 (999) 999-99-99');
   });
+  AOS.init();
 });
