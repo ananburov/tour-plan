@@ -127,6 +127,9 @@
   .container
     max-width: 576px
     width: 92%
+  .search
+    &__button
+      cursor: default
   body
     padding-top: 78px
   .navbar
@@ -180,7 +183,6 @@
       flex-direction: column
       border: none
       background-color: #fff
-      cursor: pointer
       &__line
         width: 16px
         height: 1px
@@ -197,6 +199,7 @@
   .stars
     flex-basis: auto
   .hotel
+    padding-bottom: 40px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -252,6 +255,7 @@
           display: none
       &__button
         top: 30px
+        cursor: default
         &--prev
           left: 50%
           transform: translate(-50%, 0)
@@ -268,6 +272,8 @@
     height: 255px
     &__title
       width: 200px
+    &__button
+      cursor: default
   .footer
     padding: 69px 0 21px 0
     &-wrapper
@@ -284,13 +290,13 @@
     &__title
       &--inline
         margin: 0 0 30px 0
-    &__additional
+    &__legal
       grid-row: 3
       grid-column: 1
-    &__categories
+    &__additional
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
       grid-column: 1
     &__contact
@@ -317,6 +323,11 @@
         margin-bottom: 10px
       &-icons
         justify-content: flex-start
+  .button
+    cursor: default
+  .subscribe
+    &__button
+      cursor: default
 @media (max-width: 576px)
   .logo
     width: 99px
