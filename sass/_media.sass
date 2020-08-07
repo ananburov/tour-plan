@@ -14,7 +14,16 @@
     width: 230px
     height: 230px
   .packages-wrapper
-    grid-template-columns: repeat(2, 1fr)
+    column-gap: 20px
+    row-gap: 20px
+  .big-card
+    width: 634px
+    &__info
+      padding: 37px 21px 24px 46px
+  .small-card
+    width: 307px
+    &__image
+      max-width: max-content
   .footer
     &-wrapper
       grid-template-columns: 1fr 1fr 265px 196px
@@ -56,17 +65,16 @@
   .map
     width: 340px
   .packages-wrapper
-    column-gap: 20px
-    row-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
   .big-card
+    width: 730px
     &__foto
       flex-basis: 48%
     &__info
+      padding: 46px 21px 30px 46px
       flex-basis: 48%
   .small-card
     width: 340px
-    &__image
-      max-width: max-content
   .reviews
     &-slider
       &__item
@@ -76,14 +84,13 @@
       font-weight: bold
       font-size: 30px
       line-height: 38px
-  .activities
-    &-wrapper
-      flex-wrap: wrap
-    &__card
-      margin-bottom: 20px
   .card
-    width: 340px
-    height: 255px
+    height: 180px
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+    &__title
+      width: 108px
   .footer
     padding: 73px 0 33px 0
     &-wrapper
@@ -123,7 +130,7 @@
   .modal
     &__dialog
       width: 92%
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -200,6 +207,7 @@
     flex-basis: auto
   .hotel
     padding-bottom: 40px
+    padding-top: 0
     &-name
       flex-basis: 100%
     &-wrapper
@@ -220,11 +228,14 @@
       flex-direction: column
       min-height: 450px
     &-slider
-      height: 350px
+      height: 320px
   .packages
     padding: 40px 0 50px 0
     &__title
       margin-bottom: 60px
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
   .packages-wrapper
     grid-template-columns: repeat(1, 1fr)
   .big-card
@@ -238,12 +249,14 @@
   .map
     width: 100%
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 76px 0 38px 0
     &-wrapper
       max-width: 576px
       width: 92%
       flex-direction: column
       align-items: flex-start
+    &-title
+      margin: 0
   .reviews
     padding: 40px 0 50px 0
     &__title
@@ -257,19 +270,23 @@
         top: 30px
         cursor: default
         &--prev
-          left: 50%
+          left: 48%
           transform: translate(-50%, 0)
           margin-left: -65px
         &--next
-          right: 50%
+          right: 48%
           transform: translate(50%, 0)
           margin-right: -65px
   .activities
     padding-top: 40px
     padding-bottom: 60px
+    &-wrapper
+      flex-wrap: wrap
   .card
     width: 48.5%
     height: 255px
+    margin-bottom: 20px
+    margin-right: 0 
     &__title
       width: 200px
     &__button
@@ -279,6 +296,7 @@
     &-wrapper
       grid-template-columns: 1fr
       margin: 0 0 30px 0
+      grid-row-gap: 30px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -336,10 +354,12 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
   .newsletter
-    padding: 76px 0 83px 0
     &-title
-      margin-bottom: 37px
       font-style: normal
       font-size: 20px
       line-height: 25px
@@ -406,7 +426,9 @@
       padding: 30px 20px
 @media (max-width: 375px)
   .hotel__slider
-    height: 210px
+    height: 179px
+  .map
+    height: 280px
   .small-card
     width: 294px
   .footer
@@ -420,9 +442,6 @@
     &-card
       &__button
         min-width: 120px
-@media (max-width: 320px)
-  .newsletter
-    padding: 60px 0 75px 0
 @media (max-height: 495px)
   .modal
     &__dialog
